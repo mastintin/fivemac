@@ -13,7 +13,9 @@ CLASS TMultiGet FROM TControl
    METHOD LostFocus()
 
    METHOD SetText( cText ) INLINE TxtSetText( ::hWnd, cText )
-
+   
+   METHOD SetUTF8Text( cText ) INLINE TxtSetUTF8Text( ::hWnd, cText )
+  
    METHOD SetAttributedString( cRTFText ) INLINE TxtSetAttributedString( ::hWnd, cRTFText )
 
    METHOD GetText() INLINE TxtGetText( ::hWnd )
